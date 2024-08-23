@@ -19,7 +19,7 @@ import AlertModal from '../components/AlertModal';
 import Input from '../components/Input';
 import SearchBar from '../components/SearchBar';
 
-const TaskListScreen = ({}) => {
+const TaskListScreen = ({navigation}) => {
   /*declare useState variable here */
   const [deleteModalVisible, setDeleteModalVisible] = useState(false);
   const [addModalVisible, setAddModalVisible] = useState(false);
@@ -147,7 +147,7 @@ const TaskListScreen = ({}) => {
         lefIconType={IconType.Ionicons}
         rightIconName={'home'}
         rightIcontype={IconType.AntDesign}
-        rightIconPress={() => console.log('Home pressed')}
+        rightIconPress={() => navigation.navigate('DropDownScreen')}
       />
 
       {/*Seacrh componenet */}

@@ -1,8 +1,8 @@
-import {StyleSheet} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TaskListScreen from '../screens/TaskListScreen';
+import DropDownScreen from '../screens/DropDownScreen';
 import Colors from '../constants/Colors';
 
 const Stack = createNativeStackNavigator();
@@ -16,6 +16,7 @@ const MainNavigator = () => {
         }}
         initialRouteName="TaskListScreen">
         <Stack.Screen name="TaskListScreen" component={TaskListScreen} />
+        <Stack.Screen name="DropDownScreen" component={DropDownScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
