@@ -38,3 +38,12 @@ npm run ios
 # OR using Yarn
 yarn ios
 ```
+
+## Features
+
+- **Adding new task**: Click on plus button.
+- **Deleting task**: Click on delete button
+- **Updating task**: Click on edit button
+- **Search**: Type in search bar to get the desired data,click on cross to remove the search text
+- **Refresh**: Pull down screen for refreshing data
+- **Data not found**: Show lottie animation when no data
